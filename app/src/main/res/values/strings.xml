@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">prjdamftdmbl</string>
+    <string name="MainLoginDisplayTextUser">Usuario / Correo</string>
+    <string name="MainLoginDisplayTextPassword">Contraseña</string>
+    <string name="MainLoginDisplayLogin">Iniciar Sesión</string>
+    <string name="MainLoginDisplayRegister">Registrar</string>
+    <string name="MainRegisterDisplayTextUser">Usuario</string>
+    <string name="MainRegisterDisplayTextMail">Correo Electrónico</string>
+    <string name="MainRegisterDisplayTextName">Nombre</string>
+    <string name="MainRegisterDisplayTextSurname">Apellido</string>
+</resources>
