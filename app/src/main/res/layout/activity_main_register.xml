@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="25dp"
-    tools:context=".MainRegisterActivity">
+    tools:context="MainRegisterActivity">
 
     <TextView
         android:id="@+id/MainRegisterDisplayTextUser"
@@ -14,43 +14,60 @@
         android:gravity="center"
         android:text="@string/MainRegisterDisplayTextUser"
         app:layout_constraintBaseline_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/MainRegisterDisplayInputTextUser"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:gravity="center"
-        android:layout_marginTop="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_border"
+        android:backgroundTint="@color/gray_light"
+        android:drawablePadding="8dp"
+        android:hint="@string/MainRegisterDisplayInputTextUserDefault"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainRegisterDisplayTextUser"/>
+        app:layout_constraintTop_toBottomOf="@id/MainRegisterDisplayTextUser" />
 
     <TextView
         android:id="@+id/MainRegisterDisplayTextMail"
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:gravity="center"
         android:layout_marginTop="25dp"
+        android:gravity="center"
         android:text="@string/MainRegisterDisplayTextMail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainRegisterDisplayInputTextUser"/>
+        app:layout_constraintTop_toBottomOf="@+id/MainRegisterDisplayInputTextUser" />
 
     <EditText
         android:id="@+id/MainRegisterDisplayInputTextMail"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:gravity="center"
-        android:layout_marginTop="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_border"
+        android:backgroundTint="@color/gray_light"
+        android:drawablePadding="8dp"
+        android:hint="@string/MainRegisterDisplayInputTextMailDefault"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainRegisterDisplayTextMail"/>
+        app:layout_constraintTop_toBottomOf="@id/MainRegisterDisplayTextMail" />
 
     <LinearLayout
+        android:id="@+id/MainRegisterDisplayNameLayout"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintStart_toStartOf="parent"
         android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainRegisterDisplayInputTextMail">
 
         <TextView
@@ -58,21 +75,31 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
-            android:text="@string/MainRegisterDisplayTextName"/>
+            android:text="@string/MainRegisterDisplayTextName" />
 
         <EditText
             android:id="@+id/MainRegisterDisplayInputTextName"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/text_border"
+            android:backgroundTint="@color/gray_light"
+            android:drawablePadding="8dp"
+            android:hint="@string/MainRegisterDisplayInputTextNameDefault"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainRegisterDisplayInputTextMail">
 
         <TextView
@@ -80,13 +107,61 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
-            android:text="@string/MainRegisterDisplayTextSurname"/>
+            android:text="@string/MainRegisterDisplayTextSurname" />
 
         <EditText
             android:id="@+id/MainRegisterDisplayInputTextSurname"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/text_border"
+            android:backgroundTint="@color/gray_light"
+            android:drawablePadding="8dp"
+            android:hint="@string/MainRegisterDisplayInputTextSurnameDefault"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/MainRegisterDisplayTextGender"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/MainRegisterDisplayTextGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainRegisterDisplayNameLayout" />
+
+    <LinearLayout
+        android:id="@+id/MainRegisterDisplayGenderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MainRegisterDisplayTextGender">
+
+        <Spinner
+            android:id="@+id/MainRegisterDisplayGenderSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/gray_light"
+            android:entries="@array/gender_options"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/MainRegisterDisplayGenderIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_gender_male"
+            app:tint="@color/gray_light" />
 
     </LinearLayout>
 

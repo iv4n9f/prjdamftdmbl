@@ -8,4 +8,11 @@
     <string name="MainRegisterDisplayTextMail">Correo Electrónico</string>
     <string name="MainRegisterDisplayTextName">Nombre</string>
     <string name="MainRegisterDisplayTextSurname">Apellido</string>
+    <string name="MainRegisterDisplayInputTextSurnameDefault">Doe</string>
+    <string name="MainRegisterDisplayInputTextNameDefault">John</string>
+    <string name="MainRegisterDisplayInputTextMailDefault">example@mail.com</string>
+    <string name="MainRegisterDisplayInputTextUserDefault">username</string>
+    <string name="gender_male">Hombre</string>
+    <string name="gender_female">Mujer</string>
+    <string name="MainRegisterDisplayTextGender">Género</string>
 </resources>
